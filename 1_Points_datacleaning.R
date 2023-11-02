@@ -5,12 +5,10 @@ library(stringr)
 library(dplyr)
 
 #reading in data
-globalnewslocations <- read_excel("data/NewsLocationsGlobal.xlsx")
+globalnewslocations <- read_csv("data/AP.csv")
 
 globalnewslocations$WKT <- str_remove(globalnewslocations$WKT, 
                                       pattern = "POINT ")
-globalnewslocations %>% 
-  rename("Company" = "company")
 
 globalnewslocations[c('longitude', 'latitude')] <- str_split_fixed(globalnewslocations$WKT, ' ', 2)
 

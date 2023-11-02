@@ -28,8 +28,8 @@ locations_map <-
        subtitle = "Day One: Points | 30 Day Map Challenge", 
        caption = "Source: https://www.ap.org/bureaus ",
 plot.subtitle = element_text(hjust = 0)) +
-  theme(plot.caption = element_text(hjust = 0, vjust = 14,
-                                    size = 5)) 
+  theme(plot.caption = element_text(hjust = 0, vjust = 18,
+                                    size = 8)) 
 #save it
 ggsave(locations_map, filename = "finalposts/1.Points.jpg", dpi = 1000)
 
