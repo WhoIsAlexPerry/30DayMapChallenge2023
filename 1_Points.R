@@ -22,7 +22,7 @@ locations_map <-
   basemap +
   geom_point(data=reutersofficesglobal, 
              aes(x=longitude, y=latitude), colour="Orange", 
-             pch=16, size=1.5, alpha=I(0.7)) +
+             pch=16, size=2.8, alpha=I(0.7)) +
   labs(title = "Reuters' Global Office Locations", subtitle = "30 Day Map Challenge | Day One | Points", 
        caption = "Source:https://www.thomsonreuters.com/en/locations.html",
 plot.subtitle = element_text(hjust = 0), plot.caption = element_text(hjust = -10))
