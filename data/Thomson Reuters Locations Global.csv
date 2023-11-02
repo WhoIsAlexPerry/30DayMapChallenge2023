@@ -1,3 +1,0 @@
-IconStyle/color,IconStyle/scale,IconStyle/Icon/href,IconStyle/hotSpot/_x,IconStyle/hotSpot/_xunits,IconStyle/hotSpot/_y,IconStyle/hotSpot/_yunits,LabelStyle/scale,BalloonStyle/text,_id
-ffd18802,1,https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png,32,pixels,64,insetPixels,0,<h3>$[name]</h3>,icon-1899-0288D1-nodesc-normal
-ffd18802,1,https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png,32,pixels,64,insetPixels,1,<h3>$[name]</h3>,icon-1899-0288D1-nodesc-highlight
