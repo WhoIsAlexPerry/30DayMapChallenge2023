@@ -17,9 +17,15 @@ basemap <- ggplot() + coord_fixed() +
                           axis.ticks=element_blank(), axis.text.x=element_blank(),
                           axis.text.y=element_blank())
 
-#Add simple data points to map
+#Add simple data points and title to map
 locations_map <- 
   basemap +
   geom_point(data=reutersofficesglobal, 
-             aes(x=longitude, y=latitude), colour="Red", 
-             fill="Pink",pch=15, size=2, alpha=I(0.7))
+             aes(x=longitude, y=latitude), colour="Orange", 
+             pch=16, size=1.5, alpha=I(0.7)) +
+  labs(title = "Reuters' Global Office Locations", subtitle = "30 Day Map Challenge | Day One | Points", 
+       caption = "Source:https://www.thomsonreuters.com/en/locations.html",
+plot.subtitle = element_text(hjust = 0), plot.caption = element_text(hjust = -10))
+
+#Credits
+#https://sarahleejane.github.io/learning/r/2014/09/21/plotting-data-points-on-maps-with-r.html
