@@ -8,6 +8,8 @@ NABJ <- read_csv("data/NABJConRaw.csv")
 #making world map
 usa_map <- map_data("state")
 
+#testing
+
 #Base map
 basemap <- ggplot() + coord_fixed() +
   xlab("") + ylab("") + geom_polygon(data=usa_map, aes(x=long, y=lat, group = group), 
@@ -24,4 +26,9 @@ locations_map <-
   basemap +
   geom_point(data=NABJ, 
              aes(x=longitude, y=latitude), color = 
-               "Red" ,  pch=20, size=2.8, alpha=(0.7))
+               "Red", size=2.8, alpha=(0.7))
+
+
+
+
+
